@@ -19,7 +19,7 @@ if str(test) == "1":
     date = input("Tarih: ")
     affected = input("Etkilenen: ")
     root_cause = input("Kök sebep: ")
-    error3 = {"id": len(existing) + 1, "reason": reason, "date": date, "affected": affected, "root_cause": root_cause}
+    error3 = {"id": len(existing) + 1, "reason": reason, "date": date, "affected": affected, "root_cause": root_cause, "status": "open"}
     errors = []
     errors.append(error3)
 
