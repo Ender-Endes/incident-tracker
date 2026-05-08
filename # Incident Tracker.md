@@ -2,31 +2,59 @@
 
 
 
-A CLI tool to track, list, update and delete incidents.
+A CLI and REST API tool to track, manage and resolve incidents for teams.
 
 
 
 \## Features
 
-\- Add new incidents
+\- Add, list, update and delete incidents
 
-\- List all incidents
+\- Auto-incremented IDs
 
-\- Update existing incidents
-
-\- Delete incidents
+\- Status tracking (open, in\_progress, resolved)
 
 \- Persistent JSON storage
 
+\- REST API with Flask
 
 
-\## How to run
 
-python test.py
+\## Tech Stack
+
+\- Python
+
+\- Flask
+
+\- JSON
 
 
 
 \## Live API
 
 https://incident-tracker-1-qdym.onrender.com/incidents
+
+
+
+\## API Endpoints
+
+\- GET /incidents — list all incidents
+
+\- POST /incidents — add new incident
+
+\- PUT /incidents/<id> — update incident
+
+\- DELETE /incidents/<id> — delete incident
+
+
+
+\## How to run locally
+
+git clone https://github.com/Ender-Endes/incident-tracker
+
+cd incident-tracker
+
+pip install -r requirements.txt
+
+python app.py
 
